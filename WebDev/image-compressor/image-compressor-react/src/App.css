@@ -1,14 +1,26 @@
 .App {
   text-align: center;
-  height: 100vh;
   width: 100%;
-  background-color: rgb(227, 219, 212);
+  min-height: 100vh;
+  background-color: rgb(248, 206, 169);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 .image-comp-h1{
   font-size: 100px;
   color: #001f5c;
+}
+.original-preview{
+  max-width: 55rem;
+  max-height: 35rem;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,16 +29,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
